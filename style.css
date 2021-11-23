@@ -1,4 +1,132 @@
 body{
-    background-image: url(teste.jpg);
-    background-color: rgb(127, 95, 241);
+    background-image: linear-gradient(#7280a3,#18191a);
 }
+
+img{
+    transition: transform .2s; /* Animation */
+    width: 25%;
+    height: 35%;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    left: 37%;
+    top: 16%;  
+    border-style: solid;
+    border-color: #18191a;
+}
+img:hover{
+    transform: scale(1.2);
+}
+
+h1{
+    font-family: "Dancing Script";
+    font-size: 400%;
+    text-align: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: rgb(5, 5, 5);
+}  
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(28, 6, 124); 
+    border-radius: 10px;
+}  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient( rgb(50, 49, 54) , rgb(124, 122, 126));
+    border-radius: 10px;
+} 
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #7a7575; 
+}
+
+#mySidenav a {
+    position: fixed; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 20px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+  
+#mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+#mySidenav a:active{ /*cor da letra quando clica*/
+    color: blueviolet;
+}
+  
+  /* The about link: 20px from the top with a green background */
+#about {
+    top: 30%;
+    background-color: #e8b5d9;
+}
+   
+#projects {
+    top: 40%;
+    background-color: #72757a; /* Red */
+}
+  
+#contact {
+    top: 50%;
+    background-color: #7280a3 /* Light Black */
+}
+
+h2{
+    text-align: center;
+    top: 70%;
+}
+
+h3{
+    position: relative;
+    left: 15%;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    max-width: 47.1%;
+    margin: 0 0 0 15%;
+    }
+    
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    }
+    
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+    
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+    
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-width: 45%;
+    margin: 0 0 0 15%;
+}
+
