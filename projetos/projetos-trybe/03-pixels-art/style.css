@@ -1,0 +1,59 @@
+body{
+    background-image: url(https://image.freepik.com/free-vector/gradient-galaxy-background_23-2148983655.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    text-align: center;
+    font-family: Gloria Hallelujah;
+    font-size: 20px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+#color-palette {
+    border-radius: 1px;
+    border-color: black;
+    padding: 10px;
+}
+
+.color {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px black solid;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.pixel {
+    width: 40px;
+    height: 40px;
+    border: 1px black solid;
+    display: inline-block;
+    background-color: white;
+    margin: 3px;
+}
+
+#pixel-board {
+    background: rgba(181, 124, 207, 0.5);
+    padding: 20px;
+}
+.buttons{
+    padding: 15px;
+}
+#clear-board, #generate-board{
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+    border: 2px solid purple;
+    height: 40px;
+}
+#clear-board:hover, #generate-board:hover{
+    background-color: purple;
+    color: white;
+}
+

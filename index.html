@@ -1,95 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Portfólio </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
 
-        <link rel="stylesheet" href="style.css">
+    </style>
 
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Portfólio Aline</title>
+</head>
 
-        <style>
+<body>
 
-        </style>
-    </head>
+    <header>
+        <img src="https://st.depositphotos.com/1230058/2649/v/600/depositphotos_26497873-stock-illustration-symbol-of-fire.jpg" alt="fire" width="30px">
+        <nav>
+            <li><a href="#" id="about">Início</a></li>
+            <li><a href="#" id="about">Sobre</a></li>
+            <li><a href="#" id="projects">Projetos</a></li>
+            <li><a href="#" id="contact">Contato</a></li>
+        </nav>
 
-    <body>
-
-        <div id="mySidenav" class="sidenav">
-        <a href="#" id="about">Sobre</a>
-        <a href="#" id="projects">Projetos</a>
-        <a href="#" id="contact">Contato</a>
-        </div>
-
-        <!-- Parte 1-->
+    </header>
+    <main>
         <h1>Aline Bury</h1>
+        <section>
+            <div class="photo">Foto
+            </div>
+        </section>
 
-        <img src="Aline.jpeg" alt="Aline" width=" 200px">
-        
-        <!--Parte 2-->
-        <h2>Educação</h2>
+        <section class="skills">
 
-        <h2>Descrição destacando destacando informações como:<br> nacionalidade e a cidade/estado onde mora. </h3>
-        <h2>Habilidades que possui, com destaque nas que mais tem orgulho.</h2>
+            <p>Resumo sobre você</p>
 
-        <!--Parte 3 -->
-        <h3>Projetos</h3>
+        </section>
 
-        <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'Front-End')">Front-End</button>
-            <button class="tablinks" onclick="openCity(event, 'Back-End')">Back-End</button>
-            <button class="tablinks" onclick="openCity(event, 'Outros')">Outros</button>
-        </div>
+        <section>
+            <p>Projetos <a href="projetos/projetos-trybe/03-pixels-art/index.html" target="_blank">Pixels Art</a></p>
+            <p>Projetos</p>
+            <p>Projetos</p>
+            <p>Projetos</p>
+        </section>
+    </main>
 
-        <div id="Front-End" class="tabcontent">
-            <h3>Front-End</h3>
-            <p>Nome e Link.</p>
-            <p>Nome e Link.</p>
-            <p>Nome e Link.</p>
-            <p>Nome e Link.</p>
-        </div>
-
-        <div id="Back-End" class="tabcontent">
-            <h3>Back-End</h3>
-            <p>Nome e link.</p>
-            <p>Nome e Link.</p>
-            <p>Nome e Link.</p>
-            <p>Nome e Link.</p>
-        </div>
-
-        <div id="Outros" class="tabcontent">
-            <h3>Outros</h3>
-            <p>Nome e Link.</p>
-            <p>Nome e Link.</p>
-            <p>Nome e Link.</p>
-            <p>Nome e Link.</p>
-        </div>
-
-        <script>
-            function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-            }
-        </script>
-
-    <!-- Parte 4-->
-    <h3>Contato</h3>
-
-    <p>GitHub <br> LinkedIn <br> Instagram </p>
+    <footer>
+        <p>redes sociais</p>
+    </footer>
 
 
-    </body>
+</body>
+
+</html>
 
 </html>
